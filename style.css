@@ -1,15 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
 /* structural code */
 
 body{
   background: #2c3037;
-  font-family: 'Boogaloo',Arial, Helvetica,sans-serif;
-  margin: 0 1rem;
+  font-family: 'Bree Serif', serif,'Lato', sans-serif;
+  margin: auto;
   color: #fff;
-  letter-spacing: 0.4rem;
+  text-align: justify;
+  max-width: 1150px;
 }
 
 /* text opction */
 h1{
+  font-family: 'Boogaloo',Arial, Helvetica,sans-serif;
+  letter-spacing: 0.4rem;
   color: #f4bf42;
   padding: 1rem;
   font-size: 3rem;
@@ -24,15 +28,15 @@ span{
   font-size: 2.1rem;
 }
 
-header{
-  height: 350px; /* ustawienie max pola zasięgu */
+.box2 span{
+  font-family: 'Boogaloo',Arial, Helvetica,sans-serif;
+  letter-spacing: 0.4rem;
+  font-size: 2.1rem;
 }
 
 /* Showecase */
 #Showecase{
-  margin: auto;
   width: 100%;
-  max-width: 1150px;
   background: #35353A;
 }
 
@@ -40,7 +44,6 @@ header{
 .header-box{
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  height: 80%;    /* określenie wielkości siatki do wielkości headera */
 }
 
 .box1{
@@ -68,4 +71,42 @@ header{
   border: 1px solid #fff;
   grid-column: 2;
   grid-row: 2/4;
+}
+
+/* nav */
+#nav{
+  background: #35353A;
+  margin: auto;
+}
+
+.nav-box{
+  margin: 0;
+
+}
+
+.nav-box ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+
+}
+
+.nav-box ul li{
+  display: inline-block;
+  background: #35353A;
+}
+
+.nav-box a{
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+  color: #fff;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.nav-box a:hover{
+  background: #f4bf42;
+  color: #35353A;
 }
