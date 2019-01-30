@@ -10,29 +10,107 @@ body{
   max-width: 1150px;
 }
 
+/* image */
+img{
+
+  display: block;
+  width: 75%;
+  height: auto;
+  border: 2px solid #f4bf42;
+  border-radius: 50%;
+  margin: 30px auto;
+}
+
 /* text opction */
 h1{
   font-family: 'Boogaloo',Arial, Helvetica,sans-serif;
   letter-spacing: 0.4rem;
   color: #f4bf42;
   padding: 1rem;
-  font-size: 3rem;
+  font-size: 3.3rem;
   margin-bottom: -0.8rem;
   margin-top: 1rem;
   width: 100%;
   text-align: center;
 }
 
+h2{
+  margin: 1rem;
+}
+
+h3{
+  margin: 0 1rem;
+}
+
+h4{
+  margin: 0;
+}
+
+p{
+  margin: 1rem;
+}
+
+ul{
+  margin: 0;
+}
+
+li{
+  margin: 10px;
+}
+
 span{
   color: #fff;
-  font-size: 2.1rem;
+  font-size: 2.3rem;
 }
 
 .box2 span{
   font-family: 'Boogaloo',Arial, Helvetica,sans-serif;
   letter-spacing: 0.4rem;
-  font-size: 2.1rem;
+  font-size: 2.6rem;
 }
+
+hr{
+  width: 17.5rem;
+  margin-top: -15px;
+  float: left;
+  margin-left: 0.5rem;
+  color: #f4bf42;
+}
+
+.al{
+  text-align: center;
+}
+
+#Experience{
+  color: #f4bf42;
+}
+
+.wr{3
+  padding: 0 1rem;
+}
+/* icons  gmail github disign*/
+.fab{
+  color: #fff;
+  font-size: 5rem;
+  margin: 1rem 0 ;
+  text-decoration: none;
+}
+
+.fab:hover{
+  color: #f4bf42;
+}
+
+.fas{
+  color: #fff;
+  font-size: 5rem;
+  margin: 1rem 0 ;
+  text-decoration: none;
+}
+
+.fas:hover{
+  color: #f4bf42;
+}
+
 
 /* Showecase */
 #Showecase{
@@ -43,13 +121,15 @@ span{
 /* header grid box */
 .header-box{
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: 1fr 2fr;
 }
 
 .box1{
-  border: 1px solid #fff;
   grid-column: 1;
   grid-row: 1/4;
+  margin left: auto;
+  margin-right: auto;
+
 }
 
 .box2{
@@ -59,8 +139,10 @@ span{
   padding-top: 0.6rem;
   position: relative;
   height: 3rem;
+  margin-bottom: 1.5rem;
 }
 
+/* name positon-rolate */
 .box2 span{
   position: absolute;
   transform: rotate(8deg);
@@ -68,20 +150,50 @@ span{
 }
 
 .box3{
-  border: 1px solid #fff;
+
   grid-column: 2;
   grid-row: 2/4;
+}
+
+.inside-grid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.b1{
+  grid-column: 1;
+}
+
+.b2{
+  grid-column: 2;
+}
+
+.b2 p{
+  font-size: 1.2rem;
+  margin-top: 2.5rem;
+}
+
+.b2 a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.b2 a:hover{
+  display: block;
+  color: #f4bf42;
+  height: 45px;
+}
+
+.box3 hr{
+  float: inherit;
+  margin: 0 auto 1rem auto;
+  width: 80%;
 }
 
 /* nav */
 #nav{
   background: #35353A;
-  margin: auto;
-}
-
-.nav-box{
-  margin: 0;
-
 }
 
 .nav-box ul{
@@ -95,6 +207,9 @@ span{
 .nav-box ul li{
   display: inline-block;
   background: #35353A;
+  font-size: 1.1rem;
+  margin: 0;
+  font-size: 1.25rem;
 }
 
 .nav-box a{
@@ -109,4 +224,76 @@ span{
 .nav-box a:hover{
   background: #f4bf42;
   color: #35353A;
+}
+
+/* main */
+/* section-a */
+#section-a.grid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  border-top: 1px solid #f4bf42;
+}
+
+#section-a.grid hr{
+  width: 10rem;
+}
+
+
+#section-a .container-left{
+  grid-column: 1;
+  background: #35353A;
+}
+
+#section-a .container-right{
+  grid-column: 2;
+  background: #f4bf42;
+  color: #35353A;
+}
+
+#section-a .container-right hr{
+  color: #35353A;
+}
+
+/* section-b */
+#section-b{
+  background: #35353A;
+  margin: 0;
+  padding: 0.1rem 0;
+  border-top: 1px solid #f4bf42;
+}
+
+#section-b hr{
+  width: 10rem;
+}
+
+/* section-c */
+#section-c{
+  background: #f4bf42;
+  color: #35353A;
+  padding: 0.1rem 0;
+}
+
+/* footer */
+#footer{
+  text-align: center;
+  color: #fff;
+  background: #35353A;
+}
+
+#footer a{
+  text-decoration: none;
+  color: #f4bf42;
+}
+
+#footer p{
+  margin: 0;
+  display: inline;
+}
+
+#footer p:first-child{
+  float: left;
+}
+
+#footer p:last-child{
+  float: right;
 }
