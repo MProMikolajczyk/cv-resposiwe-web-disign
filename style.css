@@ -39,7 +39,9 @@ h2{
 }
 
 h3{
-  margin: 0 1rem;
+  margin: 1.5rem auto 0.5rem 2.5rem;
+  font-size: 1.3rem;
+
 }
 
 h4{
@@ -85,9 +87,10 @@ hr{
   color: #f4bf42;
 }
 
-.wr{3
+.wr{
   padding: 0 1rem;
 }
+
 /* icons  gmail github disign*/
 .fab{
   color: #fff;
@@ -110,7 +113,6 @@ hr{
 .fas:hover{
   color: #f4bf42;
 }
-
 
 /* Showecase */
 #Showecase{
@@ -253,6 +255,75 @@ hr{
 #section-a .container-right hr{
   color: #35353A;
 }
+
+.inside-grid li{
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 5px auto 5px 3rem;
+  min-width: 215px;
+}
+
+.progres{
+  margin: auto 0 auto -4rem;
+}
+
+progress[value]{
+  width: 85%;
+  height: 1rem;
+  background-color: #fff;;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #35353A;
+  box-shadow: 0 0px 2px #35353A inset;
+}
+
+/* color progress bar broswer */
+progress::-moz-progress-bar {
+  background: #35353A;
+  box-shadow: 0px 0px 4px #f4bf42 inset;
+}
+
+progress::-webkit-progress-value {
+  background: #35353A;
+  box-shadow: 0px 0px 4px #f4bf42 inset;
+}
+progress {
+   color: #35353A;
+   box-shadow: 0px 0px 4px #f4bf42 inset;
+ }
+
+
+/* circle bar  language*/
+pie {
+    width: 6em;
+    height: 6em;
+    display: block;
+    border-radius: 50%;
+    background-color: #35353A;
+    border: 2px solid #35353A;
+    margin: 1em auto;
+
+}
+
+.proc65 {
+  box-shadow: 0 0px 2px #f4bf42 inset;
+  background-image:
+      linear-gradient(120deg, transparent 50%, #35353A 50% ),
+      linear-gradient(90deg, white 50%, transparent 50%);
+}
+
+.proc100{
+  box-shadow: 0 0px 2px #f4bf42 inset;
+  background-image:
+      linear-gradient(120deg, transparent 50%, #35353A 50% ),
+}
+
+.inside-grid h3{
+  margin: 0;
+  text-align: center;
+}
+
 
 /* section-b */
 #section-b{
